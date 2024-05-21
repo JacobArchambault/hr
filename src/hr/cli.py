@@ -14,7 +14,7 @@ def main():
     import sys
 
     # Here, we want to import the export and users modules
-    from hr import export, users
+    from hr import export_csv, export_json, users
 
     # We're importing as u, because users is probably what
     # the list will be named.
@@ -54,10 +54,10 @@ def main():
     # export module to_json_file and write users out to the file in
     # JSON format.
     if args.format == 'json':
-        export.to_json_file(file, users)
+        export_json.to_json_file(file, users)
 
     # And if it's not JSON, then we're planning on it being csv. We'll
     # call the export module to_csv_file and write out users to the
     # file in csv format.
     else:
-        export.to_csv_file(file, users)
+        export_csv.to_csv_file(file, users)
