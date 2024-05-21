@@ -1,5 +1,5 @@
 # First we need to import the packages we'll need from the standard library:
-import json
+import csv
 
 # This section deals with exporting to csv.
 def to_csv_file(export_file, users):
