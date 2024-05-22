@@ -1,1 +1,0 @@
-A command line tool for exporting system user info to console, json or csv files.
