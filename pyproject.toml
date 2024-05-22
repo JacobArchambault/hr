@@ -1,0 +1,20 @@
+[tool.pdm]
+package-dir = "src"
+
+[project]
+name = "hr"
+version = "1.0.0"
+description = "Command line user export utility"
+readme = "README.rst"
+authors = [
+    {name = "Jacob Archambault"},
+]
+dependencies = []
+requires-python = ">=3.12"
+
+[project.scripts]
+hr = "hr.cli:main"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
