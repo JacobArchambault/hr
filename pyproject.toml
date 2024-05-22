@@ -5,7 +5,7 @@ package-dir = "src"
 name = "hr"
 version = "1.0.0"
 description = "Command line user export utility"
-readme = "README.rst"
+readme = "README.md"
 authors = [
     {name = "Jacob Archambault"},
 ]
