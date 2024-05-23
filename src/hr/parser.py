@@ -1,4 +1,5 @@
 import argparse
+
 def create_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--path', help='the path to the export file')
