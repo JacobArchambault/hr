@@ -5,10 +5,7 @@ from hr import users as u
 def main():
     args = parser.create_parser().parse_args()
     users = u.fetch_users()
-    if args.path:
-        file = open(args.path, 'w', newline='')
-    else:
-        file = sys.stdout
+    file = open(args.path, 'w', newline='') if args.path else sys.stdout
     if args.format == 'json':
         export_json.to_json_file(file, users)
     else:
